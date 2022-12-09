@@ -1,39 +1,77 @@
 .nui-wrapper {
-  text-align: center;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 pre {
-  counter-reset:line-numbering;
-  background:#2c3e50;
-  padding:12px 0px 14px 0;
-  color:#ecf0f1;
-  line-height:140%;
+    counter-reset: line-numbering;
+    background: #2c3e50;
+    padding: 12px 0px 14px 0;
+    color: #ecf0f1;
+    line-height: 140%;
 }
 
 .popup-thing {
-  background: #282c34;
-  border-radius: 10px;
-  width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+    background: #282c34;
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.another-popup {
-  display: none;
-  position: absolute;
-   background: #282c34;
-  border-radius: 10px;
-  width: 500px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+.popup-thing2 {
+    position: absolute;
+    background: #9b068f;
+    border-radius: 10px;
+    width: 200px;
+    height: 240px;
+    right: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+button {
+    background: #0f25ca;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #000000;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f25ca;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #000000;
+    cursor: pointer;
+    transform: scale(1.1);
 }
