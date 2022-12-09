@@ -47,6 +47,9 @@ const App: React.FC = () => {
     })
   }
 
+  const handleCreateNewNui = () => {
+  }
+
   return (
     <div className="nui-wrapper">
       <div className='popup-thing'>
@@ -54,8 +57,13 @@ const App: React.FC = () => {
           <h1>This is the NUI Popup!</h1>
           <p>Exit with the escape key</p>
           <button onClick={handleGetClientData}>Get Client Data</button>
+          <button onClick={handleCreateNewNui}>Open Another Window</button>
           {clientData && <ReturnClientDataComp data={clientData} />}
         </div>
+      </div>
+      <div className='another-popup'>
+        <h1>This is another Element</h1>
+        <button>Close</button>
       </div>
     </div>
   );
