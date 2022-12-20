@@ -30,9 +30,10 @@ pre {
     background: #9b068f;
     border-radius: 10px;
     width: 200px;
-    height: 240px;
+    height: auto;
     right: 10vw;
     display: flex;
+    padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
     color: white;
