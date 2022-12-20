@@ -61,6 +61,24 @@ const App: React.FC = () => {
         console.log("Closing NUI", opentab);
     };
 
+    const handleSpawnPed = () => {
+        // Register the callback for the 'spawnPed' event
+        RegisterNUICallback("spawnPed", function (data) {
+            console.log("Received response from server:", data);
+        });
+
+        // Send a message to the server to trigger the 'spawnPed' event
+        SendNUIMessage({
+            action: "spawnPed",
+            data: {
+                model: "a_m_y_skater_01",
+                x: -1036.312,
+                y: -2737.724,
+                z: 20.169,
+            },
+        });
+    };
+
     return (
         <div className="nui-wrapper">
             <div className="popup-thing">
@@ -81,6 +99,7 @@ const App: React.FC = () => {
                     <div>
                         <h1>This is another NUI Popup!</h1>
                         <button onClick={closewindow}>close</button>
+                        <button onClick={handleSpawnPed}>Spawn Ped</button>
                     </div>
                 </div>
             ) : null}
